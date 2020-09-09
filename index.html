@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/johnalex/First_Logo.png">
+        <title>Temperature Converter</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="changeBg()" id="randomBg">
+        <h3>Johnalex Temperature Converter</h3>
+
+        <button onclick="changeBg()" class="bgChanger">Change Background image</button>
+        <div class="container">
+            <label for="convert_kelv">Temperature: </label>
+            <input type="text" id="convert_kelv" placeholder="temperature in kelvin">
+
+            <h2 class="result_holder">
+                <p id="result">Result</p>
+                
+
+            </h2>
+
+            <button type="submit" onClick="convert()">Convert</button>
+        </div>
+
+        <footer>
+            <p>&copy;Johnalex</p>
+        </footer>
+    </body>
+    <script src="converter.js"></script>
+</html>
